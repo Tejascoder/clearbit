@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+    </style>
+</head>
+<body>
+{% if detail%}
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Phone no</th>
+      <th>Keypeople</th>
+
+  </tr>
+
+  <tr>
+    <td>{{detail['Name']}}</td>
+      <td>{{detail['Address']}}</td>
+      <td>{{detail['Phone no']}}</td>
+      <td>{{detail['Key people']}}</td>
+
+  </tr>
+
+</table>
+
+{% endif %}
+</body>
+</html>
