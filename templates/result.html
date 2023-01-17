@@ -6,9 +6,10 @@
     <style>
 table {
   font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+   margin-left: auto;
+margin-right: auto;
 }
+
 
 td, th {
   border: 1px solid #dddddd;
@@ -18,7 +19,11 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+
+
+
 }
+
 
 
     </style>
@@ -26,21 +31,21 @@ tr:nth-child(even) {
 <body style="background-color:#b5e7a0">
 {% if detail%}
 <table>
-  <tr>
-    <th>Name</th>
-    <th>Address</th>
-    <th>Phone no</th>
-      <th>Keypeople</th>
+    <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Phone no</th>
+        <th>Keypeople</th>
 
-  </tr>
+    </tr>
 
-  <tr>
-    <td>{{detail['Name']}}</td>
-      <td>{{detail['Address']}}</td>
-      <td>{{detail['Phone no']}}</td>
-      <td>{{detail['Key people']}}</td>
+    <tr>
+        <td>{{detail['Name']}}</td>
+        <td>{{detail['Address']}}</td>
+        <td>{{detail['Phone no']}}</td>
+        <td>{{detail['Key people']}}</td>
 
-  </tr>
+    </tr>
 
 </table>
 
