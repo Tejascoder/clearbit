@@ -2,7 +2,7 @@ import clearbit, requests
 
 from flask import Flask,render_template,request
 
-clearbit.key = 'sk_9cb166128ddf1593de2821da3ae15756'  # your api key goes here
+clearbit.key = ''  # your api key goes here
 app = Flask(__name__)
 
 
